@@ -1,0 +1,9 @@
+{
+    "AssemblyFilePath": "{{{solutionRoot}}}\\Sources\\Excellence.PasswordGenerators\\bin\\Release\\{{{framework}}}\\Excellence.PasswordGenerators.dll",
+    "AssemblyPageName": "Excellence.PasswordGenerators",
+    "GeneratedPages": "Types",
+    "GeneratedAccessModifiers": "Public",
+    "FileNameFactory": "Name",
+    "Markdown.InvalidCharReplacement": "_",
+    "OutputDirectoryPath": "{{{solutionRoot}}}\\Local\\Docs\\{{{framework}}}"
+}
