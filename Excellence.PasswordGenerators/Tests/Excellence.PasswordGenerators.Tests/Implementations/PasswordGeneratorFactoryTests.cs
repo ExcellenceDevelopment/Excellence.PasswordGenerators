@@ -1,8 +1,10 @@
 ﻿using System;
 
 using Excellence.PasswordGenerators.Core;
-using Excellence.Randomizers;
-using Excellence.Randomizers.Core;
+using Excellence.Randomizers.Core.RandomGenerators;
+using Excellence.Randomizers.Core.Shufflers;
+using Excellence.Randomizers.RandomGenerators;
+using Excellence.Randomizers.Shufflers;
 
 using Xunit;
 

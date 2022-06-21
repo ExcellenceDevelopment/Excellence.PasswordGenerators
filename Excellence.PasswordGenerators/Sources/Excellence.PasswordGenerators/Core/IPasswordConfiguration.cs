@@ -1,11 +1,13 @@
-﻿using Excellence.Randomizers.Core;
+﻿using Excellence.Randomizers.Core.Configurations.Core;
 
 namespace Excellence.PasswordGenerators.Core
 {
     /// <summary>
     /// The password configuration.
     /// </summary>
-    public interface IPasswordConfiguration : IConfigurationCore<char, IPasswordConfiguration>
+    public interface IPasswordConfiguration :
+        IConfigurationCore<char, IPasswordConfiguration>,
+        IConfigurationCoreJsonUtils<char, IPasswordConfiguration>
     {
         /// <summary>
         /// Adds upper case letters.

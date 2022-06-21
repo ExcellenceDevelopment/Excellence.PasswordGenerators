@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text.RegularExpressions;
 
 using Excellence.PasswordGenerators.Core;
-using Excellence.Randomizers;
+using Excellence.Randomizers.RandomGenerators;
+using Excellence.Randomizers.Shufflers;
 
 using Xunit;
 
@@ -147,7 +148,15 @@ namespace Excellence.PasswordGenerators.Tests
             // or
 
             var configuration3 = new PasswordConfiguration()
-                .Use("@#$%", 4, 8, false);
+                .UseFromJson
+                (
+                    "{ "
+                    + "\"Items\": \"@#$%\", "
+                    + "\"MinCount\": 4, "
+                    + "\"MaxCount\": 8, "
+                    + "\"UniqueOnly\": false"
+                    + " }"
+                );
 
 
             // ABCDEFGHIJKLMNOPQRSTUVWXYZ

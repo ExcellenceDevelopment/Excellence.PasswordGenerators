@@ -1,7 +1,8 @@
 ﻿using System;
 
 using Excellence.PasswordGenerators.Core;
-using Excellence.Randomizers.Core;
+using Excellence.Randomizers.Core.RandomGenerators;
+using Excellence.Randomizers.Core.Shufflers;
 using Excellence.Randomizers.Utils;
 
 namespace Excellence.PasswordGenerators

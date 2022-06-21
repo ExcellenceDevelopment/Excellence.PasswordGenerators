@@ -1,10 +1,10 @@
 using Excellence.PasswordGenerators.Core;
-using Excellence.Randomizers;
+using Excellence.Randomizers.Configurations.Core;
 
 namespace Excellence.PasswordGenerators
 {
     /// <inheritdoc cref="IPasswordConfiguration" />
-    public class PasswordConfiguration : ConfigurationCore<char, IPasswordConfiguration>, IPasswordConfiguration
+    public class PasswordConfiguration : ConfigurationCoreComplete<char, IPasswordConfiguration>, IPasswordConfiguration
     {
         /// <inheritdoc />
         public IPasswordConfiguration UseUpperCaseLetters() => this.UseItems(Defaults.LettersUpperCase);
