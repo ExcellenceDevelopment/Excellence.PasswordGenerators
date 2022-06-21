@@ -16,8 +16,7 @@ $testCoverageResultsDirectoryPath = Join-Path $testResultsDirectoryPath "TestCov
 $testCoverageResultsReportsDirectoryPath = Join-Path $testCoverageResultsDirectoryPath "Reports";
 $testCoverletCoverletJsonFilePath = Join-Path $testCoverageResultsDirectoryPath "coverlet.json";
 $testCoverageCoverletOutputFormat = "cobertura";
-$testCoverageExclusionFilter = "[Excellence.Randomizers]*"
 
-dotnet test $solutionFilePath --framework $framework --configuration $configuration --logger "trx;LogFileName=TestResults.trx" --logger "html;LogFileName=TestResults.html" --logger "console;verbosity=normal" --results-directory $testResultsDirectoryPath --verbosity minimal -p:CollectCoverage=true -p:CoverletOutput=$testCoverageResultsReportsDirectoryPath -p:Exclude=$testCoverageExclusionFilter -p:MergeWith=$testCoverletCoverletJsonFilePath -p:CoverletOutputFormat=$testCoverageCoverletOutputFormat;
+dotnet test $solutionFilePath --framework $framework --configuration $configuration --logger "trx;LogFileName=TestResults.trx" --logger "html;LogFileName=TestResults.html" --logger "console;verbosity=normal" --results-directory $testResultsDirectoryPath --verbosity minimal -p:CollectCoverage=true -p:CoverletOutput=$testCoverageResultsReportsDirectoryPath -p:MergeWith=$testCoverletCoverletJsonFilePath -p:CoverletOutputFormat=$testCoverageCoverletOutputFormat;
 
 ReportGenerator -reports:(Join-Path $testCoverageResultsDirectoryPath "*.xml") -targetdir:$testCoverageResultsReportsDirectoryPath -reporttypes:"Html_Dark";

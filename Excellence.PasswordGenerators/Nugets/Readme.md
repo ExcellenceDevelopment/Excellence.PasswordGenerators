@@ -51,7 +51,15 @@ var configuration2 = new PasswordConfiguration()
 // or
 
 var configuration3 = new PasswordConfiguration()
-    .Use("@#$%", 4, 8, false);
+    .UseFromJson
+    (
+        "{ "
+        + "\"Items\": \"@#$%\", "
+        + "\"MinCount\": 4, "
+        + "\"MaxCount\": 8, "
+        + "\"UniqueOnly\": false"
+        + " }"
+    );
 ```
 
 <br/>
