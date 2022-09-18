@@ -4,6 +4,7 @@ using Excellence.PasswordGenerators.Core;
 using Excellence.Randomizers.Extensions;
 
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Excellence.PasswordGenerators.Extensions
 {
@@ -15,15 +16,15 @@ namespace Excellence.PasswordGenerators.Extensions
         /// <summary>
         /// Adds the dependencies needed for the the password generators.
         /// </summary>
-        /// <param name="serviceCollection">The service collection.</param>
+        /// <param name="services">The services.</param>
         /// <returns>The passed <see cref="IServiceCollection"/> instance with the added dependencies.</returns>
         /// <exception cref="ArgumentNullException">The exception when the argument is <see langword="null"/>.</exception>
-        public static IServiceCollection AddPasswordGenerators(this IServiceCollection serviceCollection)
+        public static IServiceCollection AddPasswordGenerators(this IServiceCollection services)
         {
-            serviceCollection.AddRandomizers();
-            serviceCollection.AddSingleton<IPasswordGeneratorFactory, PasswordGeneratorFactory>();
+            services.AddRandomizers();
+            services.TryAddSingleton<IPasswordGeneratorFactory, PasswordGeneratorFactory>();
 
-            return serviceCollection;
+            return services;
         }
     }
 }

@@ -6,12 +6,12 @@
 
 - [Overview](#overview)
 - [Configurations](#configurations)
-  - [Default methods](#default-methods)
+    - [Default methods](#default-methods)
 - [Password generators](#password-generators)
-  - [Create a password generator](#create-a-password-generator)
-  - [Add configurations](#add-configurations)
-  - [Generate passwords](#generate-passwords)
-  - [`Copy`](#copy)
+    - [Create a password generator](#create-a-password-generator)
+    - [Add configurations](#add-configurations)
+    - [Generate passwords](#generate-passwords)
+    - [`Copy`](#copy)
 
 <br/>
 
@@ -145,7 +145,8 @@ var passwords = passwordGenerator.Next(5);
 
 ### `Copy`
 
-`Copy` copies the password generator with all configurations and returns a new password generator instance. Instances are independent and adding configuration to one password generator does not affect another one.
+`Copy` copies the password generator with all configurations and returns a new password generator instance. Instances are independent and adding configuration to one password
+generator does not affect another one.
 
 **Example**:
 
