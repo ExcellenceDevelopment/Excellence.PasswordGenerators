@@ -1,6 +1,4 @@
-﻿using System;
-
-using Excellence.PasswordGenerators.Core;
+﻿using Excellence.PasswordGenerators.Core;
 using Excellence.PasswordGenerators.Extensions;
 using Excellence.Randomizers.Core.RandomGenerators;
 using Excellence.Randomizers.Core.Shufflers;

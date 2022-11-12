@@ -1,9 +1,6 @@
-﻿using System;
-
-using Excellence.PasswordGenerators.Core;
+﻿using Excellence.PasswordGenerators.Core;
 using Excellence.Randomizers.Core.RandomGenerators;
 using Excellence.Randomizers.Core.Shufflers;
-using Excellence.Randomizers.Utils;
 
 namespace Excellence.PasswordGenerators
 {
@@ -27,8 +24,8 @@ namespace Excellence.PasswordGenerators
         /// <param name="shuffler">The shuffler.</param>
         public PasswordGeneratorFactory(IRandomGenerator randomGenerator, IShuffler shuffler)
         {
-            ExceptionUtils.Process(randomGenerator, ExceptionUtils.IsNull, () => new ArgumentNullException(nameof(randomGenerator)));
-            ExceptionUtils.Process(shuffler, ExceptionUtils.IsNull, () => new ArgumentNullException(nameof(shuffler)));
+            ArgumentNullException.ThrowIfNull(randomGenerator);
+            ArgumentNullException.ThrowIfNull(shuffler);
 
             this.RandomGenerator = randomGenerator;
             this.Shuffler = shuffler;
