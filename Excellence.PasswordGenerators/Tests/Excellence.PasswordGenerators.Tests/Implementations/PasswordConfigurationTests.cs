@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-using Excellence.PasswordGenerators.Core;
+﻿using Excellence.PasswordGenerators.Core;
 
 using Xunit;
 

@@ -1,6 +1,4 @@
-﻿using System;
-
-using Excellence.PasswordGenerators.Core;
+﻿using Excellence.PasswordGenerators.Core;
 using Excellence.Randomizers.Extensions;
 
 using Microsoft.Extensions.DependencyInjection;
@@ -21,6 +19,8 @@ namespace Excellence.PasswordGenerators.Extensions
         /// <exception cref="ArgumentNullException">The exception when the argument is <see langword="null"/>.</exception>
         public static IServiceCollection AddPasswordGenerators(this IServiceCollection services)
         {
+            ArgumentNullException.ThrowIfNull(services);
+
             services.AddRandomizers();
             services.TryAddSingleton<IPasswordGeneratorFactory, PasswordGeneratorFactory>();
 
