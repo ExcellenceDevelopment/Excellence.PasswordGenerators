@@ -1,7 +1,7 @@
 # Password generators
 
-[![Main](https://flat.badgen.net/github/checks/ExcellenceDevelopment/Excellence.PasswordGenerators/main/build-and-test?label=Main&cache=300)](https://github.com/ExcellenceDevelopment/Excellence.PasswordGenerators/tree/main)
-[![Dev](https://flat.badgen.net/github/checks/ExcellenceDevelopment/Excellence.PasswordGenerators/dev/build-and-test?label=Dev&cache=300)](https://github.com/ExcellenceDevelopment/Excellence.PasswordGenerators/tree/dev)
+[![Main](https://flat.badgen.net/github/checks/ExcellenceDevelopment/Excellence.PasswordGenerators/main/Build%20%26%20Test?label=Main&cache=300)](https://github.com/ExcellenceDevelopment/Excellence.PasswordGenerators/tree/main)
+[![Dev](https://flat.badgen.net/github/checks/ExcellenceDevelopment/Excellence.PasswordGenerators/dev/Build%20%26%20Test?label=Dev&cache=300)](https://github.com/ExcellenceDevelopment/Excellence.PasswordGenerators/tree/dev)
 
 <br/>
 
