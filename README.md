@@ -12,14 +12,11 @@ This packagage is based on [Excellence.Randomizers](https://github.com/Excellenc
 
   - `Excellence.PasswordGenerators` - default implementation of PasswordGenerators ([Sources](./Excellence.PasswordGenerators/Sources/Excellence.PasswordGenerators), [Nuget](https://www.nuget.org/packages/Excellence.PasswordGenerators/))
 
-
 ## References
 
   - [Docs](./Excellence.PasswordGenerators/Docs)
   - [Scripts](./Excellence.PasswordGenerators/Scripts)
   - [Usage](./Excellence.PasswordGenerators/Nugets/Readme.md)
-
-<br/>
 
 **Note**: Documentation for every version can be found in the `Docs/x.x.x` directory where `x.x.x` is the package version.
 
