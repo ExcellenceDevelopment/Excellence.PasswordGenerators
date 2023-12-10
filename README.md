@@ -1,35 +1,17 @@
 # Password generators
 
-[![Main](https://flat.badgen.net/github/checks/ExcellenceDevelopment/Excellence.PasswordGenerators/main/build-and-test?label=Main&cache=300)](https://github.com/ExcellenceDevelopment/Excellence.PasswordGenerators/tree/main)
-[![Dev](https://flat.badgen.net/github/checks/ExcellenceDevelopment/Excellence.PasswordGenerators/dev/build-and-test?label=Dev&cache=300)](https://github.com/ExcellenceDevelopment/Excellence.PasswordGenerators/tree/dev)
-
-<br/>
-
-[![Licence](https://flat.badgen.net/github/license/ExcellenceDevelopment/Excellence.PasswordGenerators?label=Licence&color=4db2ff&cache=300)](https://github.com/ExcellenceDevelopment/Excellence.PasswordGenerators/blob/main/LICENSE)
-
-<br/>
-
-
-[![Excellence.PasswordGenerators](https://flat.badgen.net/nuget/v/Excellence.PasswordGenerators?icon=nuget&label=Excellence.PasswordGenerators&color=4db2ff&cache=300)](https://www.nuget.org/packages/Excellence.PasswordGenerators/)
-
-<br/>
-
 ## Overview
 
 Package for password generator.
 
 The password generator creates a random password from a predefined set of allowed characters.
 
-The packagage is based on  [Excellence.Randomizers](https://github.com/ExcellenceDevelopment/Excellence.Randomizers).
-
-<br/>
+This packagage is based on [Excellence.Randomizers](https://github.com/ExcellenceDevelopment/Excellence.Randomizers).
 
 ## Nuget packages
 
-  - [Excellence.PasswordGenerators](./Excellence.PasswordGenerators/Sources/Excellence.PasswordGenerators) - default implementation of PasswordGenerators 
+  - `Excellence.PasswordGenerators` - default implementation of PasswordGenerators ([Sources](./Excellence.PasswordGenerators/Sources/Excellence.PasswordGenerators), [Nuget](https://www.nuget.org/packages/Excellence.PasswordGenerators/))
 
-
-<br />
 
 ## References
 
@@ -40,3 +22,10 @@ The packagage is based on  [Excellence.Randomizers](https://github.com/Excellenc
 <br/>
 
 **Note**: Documentation for every version can be found in the `Docs/x.x.x` directory where `x.x.x` is the package version.
+
+## Statuses
+
+| Branch | Status |
+|:------ |:------:|
+| main   | ![main](https://badgen.net/github/checks/ExcellenceDevelopment/Excellence.PasswordGenerators/main/build-and-test?label&cache=301) |
+| dev    | ![dev](https://badgen.net/github/checks/ExcellenceDevelopment/Excellence.PasswordGenerators/dev/build-and-test?label&cache=301)   |
